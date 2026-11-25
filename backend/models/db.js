@@ -1,6 +1,6 @@
 import { Sequelize } from "sequelize";
 
-const connection = new Sequelize("postgres://recettes:recettes@localhost:5432/recettes", {
+const connection = new Sequelize(process.env.DATABASE_URL, {
     logging: false,
 });
 
